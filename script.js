@@ -2,7 +2,7 @@ let cards = document.querySelectorAll(".card");
 let matched = 0;
 let cardOne, cardTwo;
 let disableDeck = false;
-let score = 0; 
+let score = 0;
 
 function updateScore() {
   document.getElementById("score").textContent = "Pontuação: " + score;
@@ -25,7 +25,7 @@ function flipCard({ target: clickedCard }) {
 function matchCards(img1, img2) {
   if (img1 === img2) {
     matched++;
-    score++; 
+    score++;
     updateScore();
     if (matched == 8) {
       setTimeout(() => {
